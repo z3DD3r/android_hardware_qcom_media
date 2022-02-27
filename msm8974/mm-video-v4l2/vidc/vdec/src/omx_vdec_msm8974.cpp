@@ -10553,9 +10553,9 @@ OMX_ERRORTYPE omx_vdec::allocate_color_convert_buf::cache_ops(
     custom_data.cmd = cmd;
     custom_data.arg = (unsigned long)&flush_data;
 
-    DEBUG_PRINT_LOW("Cache %s: fd=%d handle=%d va=%p size=%d",
+    DEBUG_PRINT_LOW("Cache %s: fd=%d handle=0x%08X va=%p size=%d",
             (cmd == ION_IOC_CLEAN_CACHES) ? "Clean" : "Invalidate",
-            flush_data.fd, flush_data.handle, flush_data.vaddr,
+            flush_data.fd, ((uintptr_t)flush_data.handle), flush_data.vaddr,
             flush_data.length);
     int ret = ioctl(op_buf_ion_info[index].ion_device_fd, ION_IOC_CUSTOM, &custom_data);
     if (ret < 0) {
