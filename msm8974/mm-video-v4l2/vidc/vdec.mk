@@ -106,6 +106,7 @@ libmm-vdec-inc      += hardware/qcom/media/msm8974/libc2dcolorconvert
 libmm-vdec-inc      += frameworks/av/include/media/stagefright
 
 
+LOCAL_PROPRIETARY_MODULE        := true
 LOCAL_MODULE                    := libOmxVdec
 LOCAL_MODULE_TAGS               := optional
 LOCAL_CFLAGS                    := $(libOmxVdec-def)
@@ -152,6 +153,7 @@ LOCAL_PATH:= $(ROOT_DIR)
 
 ifneq ($(filter msm8974 msm8610 msm8084 msm8952 msm8992 msm8994,$(TARGET_BOARD_PLATFORM)),)
 
+LOCAL_PROPRIETARY_MODULE        := true
 LOCAL_MODULE                    := libOmxVdecHevc
 LOCAL_MODULE_TAGS               := optional
 LOCAL_CFLAGS                    := $(libOmxVdec-def)
@@ -189,6 +191,7 @@ mm-vdec-test-inc    := hardware/qcom/media/msm8974/mm-core/inc
 mm-vdec-test-inc    += $(LOCAL_PATH)/vdec/inc
 mm-vdec-test-inc    += $(vdec-inc)
 
+LOCAL_PROPRIETARY_MODULE        := true
 LOCAL_MODULE                    := mm-vdec-omx-test
 LOCAL_MODULE_TAGS               := optional
 LOCAL_CFLAGS                    := $(libOmxVdec-def)
@@ -212,6 +215,7 @@ mm-vdec-drv-test-inc    := hardware/qcom/media/msm8974/mm-core/inc
 mm-vdec-drv-test-inc    += $(LOCAL_PATH)/vdec/inc
 mm-vdec-drv-test-inc    += $(vdec-inc)
 
+LOCAL_PROPRIETARY_MODULE        := true
 LOCAL_MODULE                    := mm-video-driver-test
 LOCAL_MODULE_TAGS               := optional
 LOCAL_CFLAGS                    := $(libOmxVdec-def)

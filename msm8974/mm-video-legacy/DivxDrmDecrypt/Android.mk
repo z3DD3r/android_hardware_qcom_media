@@ -12,6 +12,7 @@ LOCAL_C_INCLUDES:= \
     $(TARGET_OUT_HEADERS)/mm-core/omxcore
 
 
+LOCAL_PROPRIETARY_MODULE := true
 LOCAL_MODULE:= libdivxdrmdecrypt
 LOCAL_MODULE_TAGS := optional
 

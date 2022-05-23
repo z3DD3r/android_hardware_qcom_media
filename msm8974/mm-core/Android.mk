@@ -53,6 +53,8 @@ endif
 
 LOCAL_C_INCLUDES        := $(LOCAL_PATH)/src/common
 LOCAL_C_INCLUDES        += $(LOCAL_PATH)/inc
+
+LOCAL_PROPRIETARY_MODULE := true
 LOCAL_MODULE            := libOmxCore
 LOCAL_MODULE_TAGS       := optional
 LOCAL_SHARED_LIBRARIES  := liblog libdl
@@ -81,6 +83,8 @@ include $(CLEAR_VARS)
 
 LOCAL_C_INCLUDES        := $(LOCAL_PATH)/src/common
 LOCAL_C_INCLUDES        += $(LOCAL_PATH)/inc
+
+LOCAL_PROPRIETARY_MODULE := true
 LOCAL_MODULE            := libmm-omxcore
 LOCAL_MODULE_TAGS       := optional
 LOCAL_SHARED_LIBRARIES  := liblog libdl

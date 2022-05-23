@@ -37,6 +37,7 @@ LOCAL_SHARED_LIBRARIES :=       \
         libdl                   \
         libui
 
+LOCAL_PROPRIETARY_MODULE := true
 LOCAL_MODULE := libstagefrighthw
 
 include $(BUILD_SHARED_LIBRARY)

@@ -64,6 +64,7 @@ libmm-vdec-inc          += frameworks/native/include/media/hardware
 libmm-vdec-inc          += hardware/qcom/media/msm8974/libc2dcolorconvert
 libmm-vdec-inc          += frameworks/av/include/media/stagefright
 
+LOCAL_PROPRIETARY_MODULE        := true
 LOCAL_MODULE                    := libOmxVdec
 LOCAL_MODULE_TAGS               := optional
 LOCAL_CFLAGS                    := $(libOmxVdec-def)
@@ -99,6 +100,7 @@ include $(CLEAR_VARS)
 mm-vdec-test-inc    := hardware/qcom/media/msm8974/mm-core/inc
 mm-vdec-test-inc    += $(LOCAL_PATH)/vdec/inc
 
+LOCAL_PROPRIETARY_MODULE        := true
 LOCAL_MODULE                    := mm-vdec-omx-test
 LOCAL_MODULE_TAGS               := optional
 LOCAL_CFLAGS                    := $(libOmxVdec-def)
@@ -121,6 +123,7 @@ include $(CLEAR_VARS)
 mm-vdec-drv-test-inc    := hardware/qcom/media/msm8974/mm-core/inc
 mm-vdec-drv-test-inc    += $(LOCAL_PATH)/vdec/inc
 
+LOCAL_PROPRIETARY_MODULE        := true
 LOCAL_MODULE                    := mm-video-driver-test
 LOCAL_MODULE_TAGS               := optional
 LOCAL_CFLAGS                    := $(libOmxVdec-def)

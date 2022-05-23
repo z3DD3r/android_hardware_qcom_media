@@ -87,6 +87,7 @@ libmm-venc-inc      += frameworks/av/include/media/stagefright
 libmm-venc-inc      += frameworks/av/include/media/hardware
 libmm-venc-inc      += $(venc-inc)
 
+LOCAL_PROPRIETARY_MODULE        := true
 LOCAL_MODULE                    := libOmxVenc
 LOCAL_MODULE_TAGS               := optional
 LOCAL_CFLAGS                    := $(libmm-venc-def)

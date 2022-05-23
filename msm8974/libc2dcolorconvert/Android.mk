@@ -11,6 +11,8 @@ LOCAL_HEADER_LIBRARIES := display_headers generated_kernel_headers
 
 LOCAL_SHARED_LIBRARIES := liblog libdl
 
+LOCAL_PROPRIETARY_MODULE := true
+
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_MODULE := libc2dcolorconvert
