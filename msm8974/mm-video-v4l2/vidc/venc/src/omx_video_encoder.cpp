@@ -73,7 +73,7 @@ omx_venc::omx_venc()
 #endif
     bframes = entropy = 0;
     char property_value[PROPERTY_VALUE_MAX] = {0};
-    property_get("vidc.debug.level", property_value, "1");
+    property_get("vidc.debug.level", property_value, "0");
     debug_level = atoi(property_value);
     property_value[0] = '\0';
     property_get("vidc.debug.bframes", property_value, "0");
